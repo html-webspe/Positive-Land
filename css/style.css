@@ -297,6 +297,17 @@ body {
   .header-social-dectop {
     display: none !important; } }
 
+.header-social-dectop a {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
+  .header-social-dectop a:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
 @media (max-width: 767.98px) {
   .header__action {
     margin-right: 34px; } }
