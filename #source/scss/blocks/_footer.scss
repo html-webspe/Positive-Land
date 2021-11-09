@@ -80,6 +80,10 @@
       margin-bottom: 24px;
 
       img {
+         @media (max-width:$md1+px) {
+            width: 128px;
+         }
+
          @media (min-width:$md1+px) {
             width: 221px;
          }

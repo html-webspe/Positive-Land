@@ -1737,6 +1737,9 @@ body {
   .footer__logo {
     display: inline-block;
     margin-bottom: 24px; }
+    @media (max-width: 1199.98px) {
+      .footer__logo img {
+        width: 128px; } }
     @media (min-width: 1199.98px) {
       .footer__logo img {
         width: 221px; } }
