@@ -134,10 +134,17 @@ body {
   min-height: 100%;
   overflow: hidden; }
 
-.js-validate-error-label {
-  font-size: 12px;
-  padding-left: 30px;
-  padding-top: 5px; }
+@media (max-width: 767.98px) {
+  .js-validate-error-label {
+    font-size: 8px;
+    padding-left: 5px;
+    padding-top: 1px; } }
+
+@media (min-width: 767.98px) {
+  .js-validate-error-label {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-top: 5px; } }
 
 @media (max-width: 767.98px) {
   .container {
