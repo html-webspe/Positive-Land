@@ -39,11 +39,13 @@ showMenu('nav-toggle', 'nav-menu');
 
 
 /*==================== <-- PRINT SWIPE --> ====================*/
-const swiper = new Swiper('.print__container', {
+const printSlider = new Swiper('.slider-print__container', {
    slidesPerView: 1,
+   allowTouchMove: false,
+   speed: 1000,
    navigation: {
-      nextEl: ".print__control-next",
-      prevEl: ".print__control-prev",
+      nextEl: ".slider-print__control-next",
+      prevEl: ".slider-print__control-prev",
    },
    pagination: {
       el: ".print__pagination",
@@ -51,6 +53,15 @@ const swiper = new Swiper('.print__container', {
       renderCustom: function (swiper, current, total) {
          return ('0' + current).slice(-2) + ' / ' + ('0' + total).slice(-2);
       }
+   },
+   parallax: true
+});
+
+const printSliderImg = new Swiper('.slider-img__container', {
+   slidesPerView: 1,
+   navigation: {
+      nextEl: ".slider-img__control-next",
+      prevEl: ".slider-img__control-prev",
    },
 });
 /*==================== <!-- PRINT SWIPE -->  ====================*/
