@@ -716,6 +716,9 @@ body {
         margin-right: -15px; } }
     .hero__img img {
       position: relative; }
+      @media (min-width: 360.98px) {
+        .hero__img img {
+          bottom: -12px; } }
       @media (min-width: 767.98px) and (max-width: 1199.98px) {
         .hero__img img {
           height: 389px;

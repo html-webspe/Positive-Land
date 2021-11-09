@@ -155,6 +155,10 @@
       img {
          position: relative;
 
+         @media (min-width:360.98px) {
+            bottom: -12px;
+         }
+
          @media (min-width:$md3+px) and (max-width:1199.98px) {
             height: 389px;
             min-width: 415px;
